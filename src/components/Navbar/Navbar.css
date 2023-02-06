@@ -11,7 +11,6 @@
     background-color: #3f3e3e;
     display: flex;
     justify-content: center;
-    /* margin: 20px 0; */
     box-shadow: 0px 0px 19px #090909d4;
 }
 
@@ -43,4 +42,57 @@
 
 .active {
     background-color: #272727;
+}
+
+/* CSS for tablet and mobile devices */
+
+@media screen and (max-width: 1024px) {
+    .navlinks {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .navbar {
+        top: unset;
+        bottom: 0;
+        margin: 0;
+    }
+
+    .navlinks {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo {
+        /* display: none; */
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        background-color: #3f3e3e;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .centernav {
+        width: unset;
+    }
+
+    .navlink {
+        text-align: center;
+        width: 120px;
+        padding: 7px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navlink {
+        text-align: center;
+        width: 103px;
+        padding: 7px 0px;
+    }
 }
