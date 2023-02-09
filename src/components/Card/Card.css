@@ -1,0 +1,51 @@
+.card {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #100f0f;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.posterdiv {
+    overflow: hidden;
+}
+
+.poster {
+    transition: transform 500ms ease-out;
+    border-radius: 5px;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 2px;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2px;
+    padding-bottom: 3px;
+}
+
+.media_type {
+    /* height: fit-content; */
+    font-size: 14px;
+    padding: 0px 3px;
+    border-radius: 5px;
+    background-color: rgb(236, 12, 12);
+}
+
+.date {
+    color: #cdcdcd;
+}
