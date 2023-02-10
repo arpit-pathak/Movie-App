@@ -1,9 +1,11 @@
 import React from "react";
 import "./Card.css";
 import { img_300, unavailable } from "../../config/config";
+import Badge from "../Badge/Badge";
 const Card = ({ id, title, poster, date, media_type, vote_average }) => {
   return (
     <div className="card">
+      <Badge vote={vote_average} />
       <div className="posterdiv">
         <img
           className="poster"
