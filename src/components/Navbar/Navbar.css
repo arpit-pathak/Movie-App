@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     box-shadow: 0px 0px 19px #090909d4;
+    z-index: 10;
 }
 
 .navlinks {
