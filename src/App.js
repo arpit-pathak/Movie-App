@@ -5,6 +5,7 @@ import Movies from "./Pages/Movies/Movies";
 import Series from "./Pages/Series/Series";
 import Trending from "./Pages/Trending/Trending";
 import Search from "./Pages/Search/Search";
+import ScrollToTopButton from "./components/ScrollToTop/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
           <Route path="/search" element={<Search />} />
         </Routes>
         <Navbar />
+        <ScrollToTopButton />
       </div>
     </BrowserRouter>
   );
