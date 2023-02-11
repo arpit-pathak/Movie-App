@@ -7,9 +7,17 @@ function Navbar() {
     <div className="navbar">
       <ul className="navlinks">
         <div className="logo">
-          <NavLink className="navlink" to={"/"}>
+          <div
+            className="logo"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             LOGO
-          </NavLink>
+          </div>
         </div>
         <div className="centernav">
           <NavLink className="navlink" to={"/"}>
