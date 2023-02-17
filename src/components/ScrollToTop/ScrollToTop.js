@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-
+import Arrow from "../../assets/uparrow.svg";
 function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 200) {
       setVisible(true);
     } else {
       setVisible(false);
@@ -22,24 +22,25 @@ function ScrollToTopButton() {
 
   const buttonStyle = {
     position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    background: "#fff",
-    color: "#333",
+    bottom: "40px",
+    right: "40px",
+    background: "#000",
+    color: "#fff",
     border: "none",
     borderRadius: "50%",
     width: "40px",
     height: "40px",
+    padding: "3px",
     fontSize: "24px",
     cursor: "pointer",
-    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.9)",
     display: visible ? "block" : "none",
   };
 
   return (
-    <div className="scroll-to-top">
+    <div className="scrolldiv">
       <button style={buttonStyle} onClick={scrollToTop}>
-        {/* <i className="fa fa-chevron-up"></i> */} ^
+        <img className="arrowImg" src={Arrow} alt="^" />
       </button>
     </div>
   );

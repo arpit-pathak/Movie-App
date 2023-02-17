@@ -10,12 +10,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app">
-        <Routes>
-          <Route path="/" element={<Trending />} exact />
-          <Route path="/series" element={<Series />} />
-          <Route path="/movies" element={<Movies />} />
-          <Route path="/search" element={<Search />} />
-        </Routes>
+        <div className="pages">
+          <Routes>
+            <Route path="/" element={<Trending />} exact />
+            <Route path="/series" element={<Series />} />
+            <Route path="/movies" element={<Movies />} />
+            <Route path="/search" element={<Search />} />
+          </Routes>
+        </div>
         <Navbar />
         <ScrollToTopButton />
       </div>
