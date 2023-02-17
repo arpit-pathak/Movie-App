@@ -10,6 +10,7 @@ import {
   unavailableLandscape,
 } from "../../config/config";
 import "./ContentModal.css";
+import Carousel from "../Carousel/Carousel";
 
 export default function TransitionsModal({ children, media_type, id }) {
   const [open, setOpen] = useState(false);
@@ -97,7 +98,9 @@ export default function TransitionsModal({ children, media_type, id }) {
                   <span className="ContentModal__description">
                     {content.overview}
                   </span>
-
+                  <div>
+                    <Carousel id={id} media_type={media_type} />
+                  </div>
                   {/* youtube button */}
                   <a
                     target="__blank"
