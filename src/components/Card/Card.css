@@ -1,11 +1,15 @@
 .card {
     width: 200px;
+    height: 350px;
     padding: 5px;
-    margin: 5px 0;
-    background-color: #100f0f;
+    margin: 10px;
+    background-color: #000000;
     color: white;
     border-radius: 5px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.721);
 }
 
 .posterdiv {
@@ -48,4 +52,11 @@
 
 .date {
     color: #cdcdcd;
+}
+
+@media screen and (max-width: 860px) {
+    .card {
+        width: 46vw;
+        margin: 7px 0;
+    }
 }
