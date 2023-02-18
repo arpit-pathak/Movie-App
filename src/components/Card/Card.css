@@ -56,7 +56,15 @@
 
 @media screen and (max-width: 860px) {
     .card {
+        /* width: 46vw; */
+        margin: 7px 5px;
+    }
+}
+
+/* fix bug in tab screens */
+@media screen and (max-width: 630px) {
+    .card {
         width: 46vw;
-        margin: 7px 0;
+        margin: 7px 0px;
     }
 }

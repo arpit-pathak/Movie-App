@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Arrow from "../../assets/uparrow.svg";
+import "./ScrollToTop.css";
 function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
 
@@ -33,7 +34,7 @@ function ScrollToTopButton() {
     padding: "3px",
     fontSize: "24px",
     cursor: "pointer",
-    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.9)",
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
     display: visible ? "block" : "none",
   };
 
