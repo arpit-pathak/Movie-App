@@ -3,8 +3,9 @@
     top: 5px;
     right: 5px;
     z-index: 1;
-    background-color: rgb(49, 15, 241);
-    width: 35px;
+    background-color: rgb(0, 0, 0);
+    width: 45px;
+    font-weight: 600;
     font-size: 14px;
     text-align: center;
     border-top-right-radius: 0px;
