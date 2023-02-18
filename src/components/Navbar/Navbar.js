@@ -1,23 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-
+import logo from "../../assets/logo.png";
 function Navbar() {
   return (
     <div className="navbar">
       <ul className="navlinks">
         <div className="logo">
-          <div
-            className="logo"
-            onClick={() => {
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              });
-            }}
-          >
-            LOGO
-          </div>
+          <img className="logoimg" src={logo} alt="Flixle" />
         </div>
         <div className="centernav">
           <NavLink className="navlink" to={"/"}>
@@ -31,7 +21,7 @@ function Navbar() {
           </NavLink>
         </div>
         <NavLink className="navlink" to={"/search"}>
-          <span className="icon">🔎</span>search
+          <span className="icon">🔎</span>Search
         </NavLink>
       </ul>
     </div>
