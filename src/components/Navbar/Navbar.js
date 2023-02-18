@@ -6,7 +6,15 @@ function Navbar() {
   return (
     <div className="navbar">
       <ul className="navlinks">
-        <div className="logo">
+        <div
+          className="logo"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
           <img className="logoimg" src={logo} alt="Flixle" />
         </div>
         <div className="centernav">
